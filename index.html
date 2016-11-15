@@ -5,88 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:100,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Portfolio of Justin Rhude</title>
+  <script src="scroll.js"></script>
 </head>
 <body>
-  <div class="vertical-center">
+  <div class="flex-col">
+    <ul class="nav" >
+      <a class="nav-btn" href="html/skills.html"><li>Skills</li></a>
+      <a class="nav-btn" href="html/projects.html"><li>Portfolio</li></a>
+      <a class="nav-btn" href="html/events.html"><li>Events</li></a>
+      <a class="nav-btn" href="html/canvas.html"><li>Canvas</li></a>
+      <a class="nav-btn" href="html/interests.html"><li>Interests</li></a>
+      <a class="nav-btn" href="html/contact.html"><li>Contact Me</li></a>
+    </ul>
 
-    <div class="header">
-      <h1>Justin Rhude<br>Coding</h1>
+    <div id="header" class="header">
+      <h1>Justin Rhude <strong>Coding</strong></h1>
     </div>
 
-    <div class="flex-row">
+    <h2>I've got the skills to pay the bills...<br />
+      and that is what really matters</h2>
 
-      <a class="card card-3 circle-img" href="skills.html">
-        <img height=128 width=128 src="images/web.ico">
-        <h2>Skills</h2>
-        <p>
-          I've got you covered with knowledge of various programming
-          languages for the web and desktop.
-          <br><br>
-          Click or Tap for more info.
-        </p>
-      </a>
+    <div class="main-card">
+      <div class="flex-row">
 
-      <a class="card card-3 circle-img" href="projects.html">
-        <img height=128 width=128 src="images/webgame.png">
-        <h2>Web Projects</h2>
-        <p>
-          Full stack development is a recent interest of mine. Front-end
-          and back-end are both ez pz. Web-apps for days.
-          <br><br>
-          Click or Tap for more info.
-        </p>
-      </a>
+        <div class="card-3 circle-img" href="skills.html">
+          <img height=128 width=128 src="images/web.ico">
+            <h3>Skills</h3>
+            <div class="card-content">
+              <p>
+                I've got you covered with knowledge of various programming
+                languages for the web and desktop.
+              </p>
+            </div>
+          <div class="card-actions">
+            <a class="button-blue" href="html/skills.html">READ MORE</a>
+          </div>
+        </div>
 
-      <a class="card card-3 circle-img" href="experience.html">
-        <img height=128 width=128 src="images/game.png">
-        <h2>Game Events</h2>
-        <p>
-          Making games is a pasion of mine, and I try to participate in
-           every game dev event that I can. SGDC, GGJ, Ptorolaunch.
-          <br><br>
-          Click or Tap for more info.
-        </p>
-      </a>
+        <div class="card-3 circle-img" href="projects.html">
+          <img height=128 width=128 src="images/webgame.png">
+          <h3>Projects</h3>
+          <div class="card-content">
+            <p>
+              Full stack development is a recent interest of mine. Front-end
+              and back-end are both ez pz. Web-apps for days.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="button-blue" href="html/projects.html">READ MORE</a>
+          </div>
+
+        </div>
+
+        <div class="card-3 circle-img" href="experience.html">
+          <img height=128 width=128 src="images/game.png">
+          <h3>Events</h3>
+          <div class="card-content">
+            <p>
+              Making games is a pasion of mine, and I try to participate in
+               every game dev event that I can. SGDC, GGJ, Protolaunch.
+            </p>
+          </div>
+          <div class="card-actions">
+           <a class="button-blue" href="html/experience.html">READ MORE</a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <div class="flex-row">
-
-      <a class="card card-3 circle-img" href="canvas.html">
-        <img height=128 width=128 src="images/webgame.png">
-        <h2>Canvas Page</h2>
-        <p>
-          A page with a canvas on it...<br />
-          pretty self explanatory.
-          <br><br>
-          Click or Tap for more info.
-        </p>
-      </a>
-
-      <a class="card card-3 circle-img" href="interests.html">
-        <img height=128 width=128 src="images/game.png">
-        <h2>Interests</h2>
-        <p>
-          PC gaming and writing code. That is all.
-          <br><br>
-          Click or Tap for more info.
-        </p>
-      </a>
-
-      <a class="card card-3 circle-img" href="contact.html">
-        <img height=128 width=128 src="images/web.ico">
-        <h2>Contact Me</h2>
-        <p>
-          Feel free to leave a comment, suggestion, or critique!
-          <br><br>
-          Click or Tap for more info.
-        </p>
-      </a>
-    </div>
-
-    <p>
+    <p class="footer">
       © Copyright Justin Rhude 2016 - All Rights Reserved
     </p>
 
