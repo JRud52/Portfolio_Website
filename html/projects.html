@@ -1,114 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The portfolio of Justin Rhude." />
 
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:100,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <title>Justin Rhude Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Justin Rhude</title>
 </head>
+
 <body>
-  <a class="back-btn" href="index.html"><img src="images/back.png" /></a>
+    <main class="flex-col">
+        <nav class="nav">
+            <a class="nav-btn" href="../index.html">
+                <li>Home</li>
+            </a>
+            <a class="nav-btn" href="skills.html">
+                <li>Skills</li>
+            </a>
+            <a class="nav-btn" href="events.html">
+                <li>Events</li>
+            </a>
+            <a class="nav-btn" href="canvas.html">
+                <li>Canvas</li>
+            </a>
+            <a class="nav-btn" href="interests.html">
+                <li>Interests</li>
+            </a>
+            <a class="nav-btn" href="contact.html">
+                <li>Contact Me</li>
+            </a>
+        </nav>
 
-  <div class="vertical-center">
+        <header class="header">
+            <h1>Justin Rhude <strong id="typewriter">Portfolio</strong><span class="cursor">|</span></h1>
+        </header>
 
-    <div class="header">
-      <h1>Projects</h1>
-    </div>
+        <div class="main-card">
 
-    <div class="flex-col">
 
-      <div class="card card-top">
-        <img  class="circle-img" height=128 width=128 src="images/logos/github.png">
-        <h2>All of my code can be found on Github</h2>
-        <a class="button" href="https://github.com/jrud52">
-          Click or tap the card to visit my Github.
-        </a>
-      </div>
-
-        <div class="card">
-          <img class="circle-img" height=128 width=128 src="images/web.ico">
-          <h2>This Website</h2>
-          <p>
-            Created using only html css and javascript. The visual look of the
-            site conforms to the Google Material Design specification and is
-            mobile responsive. It uses modern html5 and css3 techniques to
-            achieve this (html5 semantic tags and flexbox positioning for example).
-          </p>
-          <div class="logo">
-            <img src="images/logos/html5.png">
-            <img src="images/logos/css3.png">
-            <img src="images/logos/javascript.png">
-          </div>
+            <section class="github-header">
+                <img class="circle-img" height=128 width=128 src="../images/logos/github.png">
+                <h3>All of my code can be found on Github</h3>
+                <a class="button-blue" href="https://github.com/jrud52">GO THERE</a>
+            </section>
         </div>
 
-        <div class="card">
-          <img  class="circle-img" height=128 width=128 src="images/webgame.png">
-          <h2>Project Markdown</h2>
-          <p>
-            The point of this project is to create a markdown editor for students. As a computer science student myself, I wanted an application that I could use to create class-notes and study-notes that was simple and quick to use. I looked for a program that had the following necessary features:
-<ul>
-    <li>Cross platform
-    <li>Offline storage with optional online backups to google drive/dropbox
-    <li>Responsive interface that could be reconfigured based on the user's preference
-    <li>Ability to switch between the editor and trhe preview easily
-    <li>Ability to split the view to see both the preview and the editor
-    <li>Supported extra markdown features like table of contents, tables, etc.
-    <li>Custom css rules for the preview/output
-    <li>export to various formats
-    <li>ability to open a folder of markdown files and switch between them easily
-    <li>tabbed editor to edit multiple files at once
-</ul>
+        <div class="secondary-card projects">
+            <div class="flex-row">
+                <section class="card card-3">
+                    <img height=128 width=128 src="../images/logos/html5.png">
+                    <h3>This Website</h3>
+                    <div class="card-content">
+                        <p>
+                            Created using only html css and javascript. The visual look of the site conforms to the Google Material Design specification and is mobile responsive. It uses modern html5 and css3 techniques to achieve this (html5 semantic tags and flexbox positioning
+                            for example).
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="../images/logos/electron.png">
+                    <h3>Project Markdown</h3>
+                    <div class="card-content">
+                        <p>
+                            A next generation markdown editor and viewer that is gear towards note taking for students. Using a special markdown syntax, the user will be able to create great looking study notes with minimal effort. Just enter the content and specify headings, and
+                            the program does the rest.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="../images/logos/cplusplus.png">
+                    <h3>Project Sampson</h3>
+                    <div class="card-content">
+                        <p>
+                            A simple 2D game engine used as a showcase for my skills with C++ and OpenGL. Eventually I might add some 3D features, but for now it is just a 2D engine. Currently there is not much progress, but that will change as I have more time to work on it when
+                            school is done.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+            </div>
 
-So far I have not been able to find an application that does everything that I want, so I decided to write my own that was geared towards students. For the student, I would like to add the following features:
+            <div class="flex-row">
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="../images/logos/cplusplus.png">
+                    <h3>Project Sampson</h3>
+                    <div class="card-content">
+                        <p>
+                            A simple 2D game engine used as a showcase for my skills with C++ and OpenGL. Eventually I might add some 3D features, but for now it is just a 2D engine. Currently there is not much progress, but that will change as I have more time to work on it when
+                            school is done.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="../images/logos/cplusplus.png">
+                    <h3>Project Sampson</h3>
+                    <div class="card-content">
+                        <p>
+                            A simple 2D game engine used as a showcase for my skills with C++ and OpenGL. Eventually I might add some 3D features, but for now it is just a 2D engine. Currently there is not much progress, but that will change as I have more time to work on it when
+                            school is done.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="../images/logos/cplusplus.png">
+                    <h3>Project Sampson</h3>
+                    <div class="card-content">
+                        <p>
+                            A simple 2D game engine used as a showcase for my skills with C++ and OpenGL. Eventually I might add some 3D features, but for now it is just a 2D engine. Currently there is not much progress, but that will change as I have more time to work on it when
+                            school is done.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+            </div>
 
-  <ul>
-    <li>The user may create a "Study Note" that adds the contents of each other file in the folder to it in order. Eventually the program may be able to automatically generate this file as the user creates more markdown files.
-    <li>Any heading marked Lecture 1 or Chapter 1 will be added to the file in order.
-    <li>The will be able to make special headings like # Definitions and have the program look for matching headings in other files. If it finds another # Definitions heading, then it will automatically add all the contents of that section to the study note.
-  </ul>
-          </p>
+
 
         </div>
 
-        <div class="card">
-          <img  class="circle-img" height=128 width=128 src="images/webgame.png">
-          <h2>Project Nephalem</h2>
-          <p>
-            A project that I have been working on which will be a showcase of
-            the best that I can do with web programming. It will be done with
-            what I call the REALM stack.
-          </p>
-          <div class="logo">
-            <img src="images/logos/rust.png">
-            <img src="images/logos/nginx.png">
-            <img src="images/logos/angular.png">
-            <img src="images/logos/fedora.png">
-            <img src="images/logos/mongodb.png">
-          </div>
-        </div>
-
-        <div class="card">
-          <img  class="circle-img" height=128 width=128 src="images/game.png">
-          <h2>Project Sampson</h2>
-          <p>
-            This is a simple 2D game engine that I have been working on.
-            Eventually I might end up implementing full 3D, but for now the
-            plan is to start with 2D to get everything set up.
-          </p>
-          <div class="logo">
-            <img src="images/logos/opengl.png">
-            <img src="images/logos/cplusplus.png">
-            <img src="images/logos/c.jpg">
-          </div>
-        </div>
-
-
-    </div>
-    <p>
-      © Copyright Justin Rhude 2016 - All Rights Reserved
-    </p>
-  </div>
+        <footer class="footer">
+            © Copyright Justin Rhude 2016 - All Rights Reserved
+        </footer>
+    </main>
 </body>
+<script src="../js/typewriter.js"></script>
+
 </html>
