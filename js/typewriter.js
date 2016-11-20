@@ -14,5 +14,4 @@ function typeLetter(letter) {
 
 function blink() {
     cursor.className += " blinking-cursor";
-    //console.log(cursor.className);
 }

@@ -57,6 +57,13 @@ p {
     font-weight: 400;
 }
 
+canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .main-card {
     width: 100%;
     max-width: 1280px;
@@ -66,13 +73,41 @@ p {
 
 .header {
     width: 100%;
-    background-color: #2196f3;
     height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
-    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+
+.header-index {
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher1.jpg);
+    background-size: cover;
+}
+
+.header-contact {
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher2.jpg);
+    background-size: cover;
+}
+
+.header-events {
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher3.jpg);
+    background-size: cover;
+}
+
+.header-interests {
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher4.jpg);
+    background-size: cover;
+}
+
+.header-projects {
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher5.jpg);
+    background-size: cover;
+}
+
+.header-skills {
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher6.jpg);
+    background-size: cover;
 }
 
 .nav {
@@ -81,27 +116,27 @@ p {
     position: fixed;
     left: 0px;
     top: 0px;
-    background-color: #2196f3;
     margin: 0;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    overflow: hidden;
 }
 
-.nav li {
-    list-style-type: none;
+.nav-solid {
+    background-color: #2196f3;
+}
+
+.nav a {
+    height: 100%;
     padding: 20px;
     color: #eeeeee;
     font-size: 1.4em;
     font-weight: 300;
 }
 
-.nav a {
-    height: 100%;
-}
-
 .nav a:hover {
-    background-color: #1e88e5;
+    color: #8fcbfb;
 }
 
 .flex-row {
@@ -109,6 +144,7 @@ p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -175,7 +211,6 @@ p {
 
 .card-actions {
     height: 50px;
-    border-top: 1px solid #777;
 }
 
 .footer {
@@ -190,10 +225,23 @@ p {
 .secondary-card {
     max-width: none;
     background-color: #eee;
+    width: 100%;
 }
 
-.github-header {
+.card-single {
     padding: 50px 0px;
+    width: 100%;
+}
+
+.event {
+    max-width: 1000px;
+}
+
+.interest-card img {
+    padding: 0;
+    margin: 20px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .card-actions>.button-blue {
@@ -202,6 +250,61 @@ p {
 
 .projects>.flex-row>.card>.card-content {
     height: 250px;
+}
+
+.interests {
+    background-color: #fff;
+}
+
+.interests>.flex-row>.card>.card-content {
+    height: 100px;
+}
+
+.contacts>a img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.full {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.canvas-page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.canvas-header {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 244, 0.7);
+    height: 100%;
+}
+
+.canvas-header h1 {
+    font-size: 5em;
+}
+
+.canvas-header nav {
+    background-color: transparent;
+}
+
+.canvas-footer {
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
 }
 
 #lang_section {
@@ -302,4 +405,9 @@ p {
     50% {
         color: #eee;
     }
+}
+
+
+}
+
 }

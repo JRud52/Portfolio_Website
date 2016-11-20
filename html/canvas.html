@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:100,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Justin Rhude Skills</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Justin Rhude Canvas</title>
 </head>
 
-<body>
-    <a class="back-btn" href="index.html"><img src="images/back.png" /></a>
+<body class="full">
+    <main class="canvas-page">
 
-    <div class="vertical-center">
+        <header class="header canvas-header">
+            <nav class="nav">
+                <a class="nav-btn" href="../index.html">
+                    Home
+                </a>
+                <a class="nav-btn" href="skills.html">
+                    Skills
+                </a>
+                <a class="nav-btn" href="projects.html">
+                    Portfolio
+                </a>
+                <a class="nav-btn" href="events.html">
+                    Events
+                </a>
+                <a class="nav-btn" href="interests.html">
+                    Interests
+                </a>
+                <a class="nav-btn" href="contact.html">
+                    Contact Me
+                </a>
+            </nav>
 
-        <div class="header">
-            <h1>Canvas</h1>
-        </div>
+            <h1 id="canvas-text">Justin Rhude <strong id="typewriter">Canvas</strong><span class="cursor">|</span></h1>
 
-        <div class="flex-col">
+            <footer class="footer canvas-footer">
+                © Copyright Justin Rhude 2016 - All Rights Reserved
+            </footer>
+        </header>
 
-            <div class="card card-top">
-                <img class="circle-img" height=128 width=128 src="images/web.ico">
-                <h2>Animated Canvas Scene/</h2>
-                <p>
-                    Make header background an animated canvas scene with clouds and sun.
-                </p>
-                <canvas height="500px" width="500px"></canvas>
-            </div>
+        <canvas id="canvas" height="500px" width="500px">Update your browser...</canvas>
+        <!--
 
-        </div>
-        <p>
-            © Copyright Justin Rhude 2016 - All Rights Reserved
-        </p>
-    </div>
+
+-->
+    </main>
 </body>
+<script src="../js/typewriter.js"></script>
+<script src="../js/canvas.js"></script>
 
 </html>
