@@ -321,14 +321,27 @@ canvas {
 @media all and (max-width: 800px) {
     .header {
         height: 200px;
+        background: none;
+        background-color: #2196f3;
+    }
+    .canvas-header {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(33, 150, 244, 0.7);
+        height: 100%;
     }
     .nav {
         flex-direction: column;
         position: relative;
         height: auto;
         padding: 0;
+        background-color: #2196f3;
     }
-    .nav li {
+    .nav a {
         border-bottom: 1px solid #bbb;
     }
     .flex-row {
