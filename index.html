@@ -189,12 +189,12 @@
             </header>
 
             <section class="card-single">
-                <form class="flex-col" id="contact_form" name="contact_form" onsubmit="submit_form(event)">
+                <form class="flex-col" id="contact_form" name="contact_form">
 
                     <input required type="text" id="name" name="name" placeholder="Name" />
                     <input required type="email" id="email" name="email" placeholder="Email" />
                     <textarea required id="message" name="message" placeholder="Message"></textarea>
-                    <button class="button-blue" type="submit" name="submit">Submit</button>
+                    <button class="button-blue" onclick="submit_form(event)" name="submit">Submit</button>
 
                 </form>
                 <div>
