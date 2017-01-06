@@ -51,6 +51,7 @@ function submit_form(e) {
                 $('.email_error').fadeOut(200).hide();
                 $('.message_error').fadeOut(200).hide();
                 $('.send_error').fadeOut(200).hide();
+                $('#contact_form').fadeOut(200).hide();
 
             },
             error: function() {
