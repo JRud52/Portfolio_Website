@@ -47,7 +47,7 @@ function submit_form(e) {
                 name: name,
                 email: email,
                 message: message
-            }
+            },
             success: function() {
                 $('.success').fadeIn(200).show();
                 $('.name_error').fadeOut(200).hide();
