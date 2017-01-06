@@ -57,13 +57,6 @@ p {
     font-weight: 400;
 }
 
-canvas {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .main-card {
     width: 100%;
     max-width: 1280px;
@@ -81,33 +74,47 @@ canvas {
 }
 
 .header-index {
-    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher1.jpg);
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header-contact {
-    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher2.jpg);
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
 }
 
 .header-events {
     background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-}
-
-.header-interests {
-    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher4.jpg);
-    background-size: cover;
+    height: 500px;
 }
 
 .header-projects {
-    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher5.jpg);
+    background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
 }
 
 .header-skills {
     background: linear-gradient( rgba(33, 150, 244, 0.7), rgba(33, 150, 244, 0.7)), url(../images/backgrounds/witcher6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
 }
 
 .nav {
@@ -186,6 +193,7 @@ canvas {
     margin-top: 20px;
     margin-bottom: 40px;
     min-height: 200px;
+    align-self: flex-start;
 }
 
 .button-blue {
@@ -233,17 +241,6 @@ canvas {
     width: 100%;
 }
 
-.event {
-    max-width: 1000px;
-}
-
-.interest-card {
-    padding: 0;
-    margin: 20px;
-    max-width: 400px;
-    max-height: 400px;
-}
-
 .card-actions>.button-blue {
     line-height: 4em;
 }
@@ -252,59 +249,12 @@ canvas {
     height: 250px;
 }
 
-.interests {
-    background-color: #fff;
+.event>p {
+    height: 250px;
 }
 
-.interests>.flex-row>.card>.card-content {
-    height: 100px;
-}
-
-.contacts>a img {
-    max-width: 200px;
-    max-height: 200px;
-}
-
-.full {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.canvas-page {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-}
-
-.canvas-header {
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(33, 150, 244, 0.7);
-    height: 100%;
-}
-
-.canvas-header h1 {
-    font-size: 5em;
-}
-
-.canvas-header nav {
-    background-color: transparent;
-}
-
-.canvas-footer {
-    font-size: 1em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: transparent;
+.langs>div {
+    height: 300px;
 }
 
 #lang_section {
@@ -323,16 +273,6 @@ canvas {
         height: 300px;
         background: none;
         background-color: #2196f3;
-    }
-    .canvas-header {
-        font-size: 1em;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(33, 150, 244, 0.7);
-        height: 100%;
     }
     .nav {
         flex-direction: column;
@@ -353,9 +293,6 @@ canvas {
         width: 98%;
         margin-top: 20px;
         margin-bottom: 30px;
-    }
-    video {
-        width: 100%;
     }
 }
 
@@ -423,9 +360,4 @@ canvas {
     50% {
         color: #eee;
     }
-}
-
-
-}
-
 }

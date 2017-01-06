@@ -7,6 +7,8 @@
     <meta name="description" content="The programming portfolio of Justin Rhude." />
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans%7CRoboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio of Justin Rhude</title>
 </head>
@@ -14,87 +16,254 @@
 <body>
     <main class="flex-col">
 
-        <nav class="nav">
-            <a class="nav-btn" href="html/skills.html">
-                Skills
-            </a>
-            <a class="nav-btn" href="html/projects.html">
-                Portfolio
-            </a>
-            <a class="nav-btn" href="html/events.html">
-                Events
-            </a>
-            <a class="nav-btn" href="html/canvas.html">
-                Canvas
-            </a>
-            <a class="nav-btn" href="html/interests.html">
-                Interests
-            </a>
-            <a class="nav-btn" href="html/contact.html">
-                Contact Me
-            </a>
-        </nav>
-
         <header id="header" class="header header-index">
             <h1>Justin Rhude <strong id="typewriter">Coding</strong><span class="cursor">|</span></h1>
         </header>
 
-
-        <h2>"Games, websites, apps... I've done it all"</h2>
+        <h2>"My skills contain a variety of languages, areas of development, and frameworks"</h2>
 
         <div class="main-card">
-            <div class="flex-row index-cards">
+            <div class="flex-row">
 
                 <section class="card-3 circle-img">
-                    <img height=128 width=128 src="images/web.png" alt="skills">
-                    <h3>Skills</h3>
+                    <img height=128 width=128 src="images/logos/c.jpg" alt="desktop">
+                    <h3>Desktop Application Programming</h3>
                     <div class="card-content">
                         <p>
-                            I've got you covered with knowledge of various programming languages for the web and desktop.
+                            C/C++ and Rust are my goto languages when it comes to programming desktop applications for Windows and Linux.
                         </p>
-                    </div>
-                    <div class="">
-                        <a class="button-blue" href="html/skills.html">READ MORE</a>
                     </div>
                 </section>
 
                 <section class="card-3 circle-img">
-                    <img height=128 width=128 src="images/webgame.png" alt="projects">
-                    <h3>Projects</h3>
+                    <img height=128 width=128 src="images/logos/angular.png" alt="front">
+                    <h3>Web Programming</h3>
                     <div class="card-content">
                         <p>
-                            Full stack development is a recent interest of mine. Front-end and back-end are both ez pz. Web-apps for days.
+                            Web apps are becoming more and more popular,
                         </p>
                     </div>
-                    <div class="">
-                        <a class="button-blue" href="html/projects.html">READ MORE</a>
-                    </div>
-
                 </section>
 
                 <section class="card-3 circle-img">
-                    <img height=128 width=128 src="images/game.png" alt="events">
-                    <h3>Events</h3>
+                    <img height=128 width=128 src="images/logos/nodejs.png" alt="back">
+                    <h3>Game Development</h3>
                     <div class="card-content">
                         <p>
-                            Making games is a pasion of mine, and I try to participate in every game dev event that I can. SGDC, GGJ, Protolaunch.
+                            Creating something that brings joy to other people is very fullfilling. Especially when it was fun to make in the first place.
                         </p>
-                    </div>
-                    <div class="">
-                        <a class="button-blue" href="html/experience.html">READ MORE</a>
                     </div>
                 </section>
             </div>
+
         </div>
 
+        <section class="secondary-card main-card">
+            <div class="flex-row langs">
+                <div class="card card-3">
+                    <h4>Systems Programming:</h4>
+                    <br /> C/C++
+                    <br /> Rust
+                    <br /> Java
+                    <br /> C#
+                    <br /> Python 3
+                    <br /> Bash
+                </div>
 
-        <footer class="footer">
-            © Copyright Justin Rhude 2016 - All Rights Reserved | Background Images - Screenshots From The Witcher 3
-        </footer>
+                <div class="card card-3">
+                    <h4>Web Programming:</h4>
+                    <br /> HTML5
+                    <br /> CSS3
+                    <br /> Dart
+                    <br /> PHP
+                    <br /> Nodejs
+                    <br /> SQL/MySQL
+                </div>
+
+                <div class="card card-3">
+                    <h4>Game Development:</h4>
+                    <br /> OpenGl (C++)
+                    <br /> Unreal Engine 4
+                    <br /> Unity
+                    <br /> Lumberyard (In Progress)
+
+                </div>
+
+            </div>
+        </section>
+
+        <header class="header header-projects">
+            <h1><strong>Portfolio</strong></h1>
+        </header>
+
+        <div class="main-card">
+
+
+            <section class="card-single">
+                <img class="circle-img" height=128 width=128 src="images/logos/github.png" alt="github">
+                <h3>All of my code can be found on Github</h3>
+                <a class="button-blue" href="https://github.com/jrud52">GO THERE</a>
+            </section>
+        </div>
+
+        <div class="secondary-card projects">
+            <div class="flex-row">
+                <section class="card card-3">
+                    <img height=128 width=128 src="images/logos/html5.png" alt="website">
+                    <h3>This Website</h3>
+                    <div class="card-content">
+                        <p>
+                            Created using only html, css, javascript and php. The visual look of the site conforms to the Google Material Design specification and is mobile responsive. It uses modern html5 and css3 techniques to achieve this (html5 semantic tags and flexbox positioning
+                            for example).
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                    </div>
+                </section>
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="images/logos/electron.png" alt="electron">
+                    <h3>Project Markdown</h3>
+                    <div class="card-content">
+                        <p>
+                            A next generation markdown editor and viewer that is gear towards note taking for students. Using a special markdown syntax, the user will be able to create great looking study notes with minimal effort. Just enter the content and specify headings, and
+                            the program does the rest.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/portfolio_website">View on Github</a>
+                        <a class="button-blue" href="https://jrud52.github.io/project_markdown/">Website</a>
+                    </div>
+                </section>
+                <section class="card card-3 circle-img">
+                    <img height=128 width=128 src="images/logos/cplusplus.png" alt="c++">
+                    <h3>Project Sampson</h3>
+                    <div class="card-content">
+                        <p>
+                            A simple 2D game engine used as a showcase for my skills with C++ and OpenGL. Eventually I might add some 3D features, but for now it is just a 2D engine. Currently there is not much progress, but that will change as I have more time to work on it when
+                            school is done.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="button-blue" href="https://github.com/jrud52/sampson">View on Github</a>
+                    </div>
+                </section>
+
+            </div>
+
+            <header id="header" class="header header-events">
+                <h1><strong>Events</strong></h1>
+            </header>
+
+
+            <div class="flex-row">
+                <div class="card-3 card event">
+                    <img class="circle-img" height=128 width=128 src="images/logos/ggj.jpg" alt="global game jam">
+                    <h2>Global Game Jam</h2>
+                    <p>
+                        2012 - 2014 <br /> While not techinically a competition, I have participated in every Global Game Jam that I was able to since I found out about its existance. A good mix of 2D and 3D games have come out of this event.
+                    </p>
+                </div>
+
+                <div class="card-3 card event">
+                    <img class="circle-img" height=128 width=128 src="images/logos/sgdc.png" alt="sudbury game design competition">
+                    <h2>Sudbury Game Design Competition</h2>
+                    <p>
+                        An event that started last year, the Sudbury Game Design Competition brought in 15 teams in a Game Jam style of competition. The end products were judged by a panel of judges, and our game was awarded third place.
+                    </p>
+                </div>
+
+                <div class="card-3 card event">
+                    <img class="circle-img" height=128 width=128 src="images/logos/protolaunch.jpg" alt="protolaunch">
+                    <h2>Protolaunch</h2>
+                    <p>
+                        An event that I was able to participate in for its final year, Protolaunch was a series of workshops that were run on several weekends during the year, that brought in industry professionals to do a talk and then an activity with the participants. The
+                        summer event was the best part though. We were split up into teams of 4 and we each had 5 weeks to make the best game prototype that we possibly could make. At the end of the competition, the games were judged, and my team was
+                        awarded with second place.
+                    </p>
+                </div>
+            </div>
+
+            <header id="header" class="header header-contact">
+                <h1><strong>Contact</strong></h1>
+            </header>
+
+            <section class="card-single">
+                <form class="flex-col" name="contact_form" onsubmit="submit_form(event)">
+
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="textarea" name="message" placeholder="Message" />
+                    <button type="submit" name="submit">Submit</button>
+                    <span class="success" style="display:none"> Thank you for the message, I will get back to you as soon as possible.</span>
+                    <span class="name_error" style="display:none"> Please enter a valid name</span>
+                    <span class="email_error" style="display:none"> Please enter a valid email</span>
+                    <span class="message_error" style="display:none"> Please enter a valid message</span>
+                    <span class="send_error" style="display:none"> Something went wrong, try submitting again</span>
+
+
+                </form>
+            </section>
+
+
+            <script>
+                function submit_form(e) {
+                    e.preventDefault();
+                    var name = $("#name").val();
+                    var email = $("#email").val();
+                    var message = $("#message").val();
+                    var dataString = 'name=' + name + '&email=' + email + '&message=' + message;
+
+                    if (name == '' || email == '' || message == '') {
+                        if (name == '') {
+                            $('.success').fadeOut(200).hide();
+                            $('.send_error').fadeOut(200).hide();
+                            $('.name_error').fadeIn(200).show();
+                        }
+                        if (email == '') {
+                            $('.success').fadeOut(200).hide();
+                            $('.send_error').fadeOut(200).hide();
+                            $('.email_error').fadeIn(200).show();
+                        }
+                        if (message == '') {
+                            $('.success').fadeOut(200).hide();
+                            $('.send_error').fadeOut(200).hide();
+                            $('.message_error').fadeIn(200).show();
+                        }
+
+                    } else {
+                        $.ajax({
+                            type: "POST",
+                            url: "contact.php",
+                            data: dataString,
+                            success: function() {
+                                $('.success').fadeIn(200).show();
+                                $('.name_error').fadeOut(200).hide();
+                                $('.email_error').fadeOut(200).hide();
+                                $('.message_error').fadeOut(200).hide();
+                                $('.send_error').fadeOut(200).hide();
+
+                            },
+                            error: function() {
+                                $('.success').fadeOut(200).hide();
+                                $('.name_error').fadeOut(200).hide();
+                                $('.email_error').fadeOut(200).hide();
+                                $('.message_error').fadeOut(200).hide();
+                                $('.send_error').fadeIn(200).show();
+                            }
+                        });
+                    }
+                    return false;
+                }
+            </script>
+
+
+            <footer class="footer">
+                © Copyright Justin Rhude 2016 - All Rights Reserved | Background Images - Screenshots From The Witcher 3
+            </footer>
 
     </main>
     <script src="js/typewriter.js"></script>
-    <script src="js/navbar.js"></script>
 </body>
 
 </html>
