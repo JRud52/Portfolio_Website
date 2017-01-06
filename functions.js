@@ -21,7 +21,6 @@ function submit_form(e) {
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-    var dataString = 'name=' + name + '&email=' + email + '&message=' + message;
 
     if (name == '' || email == '' || message == '') {
         if (name == '') {
@@ -44,7 +43,11 @@ function submit_form(e) {
         $.ajax({
             type: "POST",
             url: "contact.php",
-            data: dataString,
+            data: {
+                name: name,
+                email: email,
+                message: message
+            }
             success: function() {
                 $('.success').fadeIn(200).show();
                 $('.name_error').fadeOut(200).hide();
