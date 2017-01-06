@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans%7CRoboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Portfolio of Justin Rhude</title>
 </head>
 
@@ -26,7 +26,7 @@
             <div class="flex-row">
 
                 <section class="card-3 circle-img">
-                    <img height=128 width=128 src="images/logos/c.jpg" alt="desktop">
+                    <img height=128 width=128 src="logos/c.jpg" alt="desktop">
                     <h3>Desktop Application Programming</h3>
                     <div class="card-content">
                         <p>
@@ -36,7 +36,7 @@
                 </section>
 
                 <section class="card-3 circle-img">
-                    <img height=128 width=128 src="images/logos/angular.png" alt="front">
+                    <img height=128 width=128 src="logos/angular.png" alt="front">
                     <h3>Web Programming</h3>
                     <div class="card-content">
                         <p>
@@ -46,7 +46,7 @@
                 </section>
 
                 <section class="card-3 circle-img">
-                    <img height=128 width=128 src="images/logos/nodejs.png" alt="back">
+                    <img height=128 width=128 src="logos/nodejs.png" alt="back">
                     <h3>Game Development</h3>
                     <div class="card-content">
                         <p>
@@ -100,7 +100,7 @@
 
 
             <section class="card-single">
-                <img class="circle-img" height=128 width=128 src="images/logos/github.png" alt="github">
+                <img class="circle-img" height=128 width=128 src="logos/github.png" alt="github">
                 <h3>All of my code can be found on Github</h3>
                 <a class="button-blue" href="https://github.com/jrud52">GO THERE</a>
             </section>
@@ -109,7 +109,7 @@
         <div class="secondary-card projects">
             <div class="flex-row">
                 <section class="card card-3">
-                    <img height=128 width=128 src="images/logos/html5.png" alt="website">
+                    <img height=128 width=128 src="logos/html5.png" alt="website">
                     <h3>This Website</h3>
                     <div class="card-content">
                         <p>
@@ -122,7 +122,7 @@
                     </div>
                 </section>
                 <section class="card card-3 circle-img">
-                    <img height=128 width=128 src="images/logos/electron.png" alt="electron">
+                    <img height=128 width=128 src="logos/electron.png" alt="electron">
                     <h3>Project Markdown</h3>
                     <div class="card-content">
                         <p>
@@ -136,7 +136,7 @@
                     </div>
                 </section>
                 <section class="card card-3 circle-img">
-                    <img height=128 width=128 src="images/logos/cplusplus.png" alt="c++">
+                    <img height=128 width=128 src="logos/cplusplus.png" alt="c++">
                     <h3>Project Sampson</h3>
                     <div class="card-content">
                         <p>
@@ -158,7 +158,7 @@
 
             <div class="flex-row">
                 <div class="card-3 card event">
-                    <img class="circle-img" height=128 width=128 src="images/logos/ggj.jpg" alt="global game jam">
+                    <img class="circle-img" height=128 width=128 src="logos/ggj.jpg" alt="global game jam">
                     <h2>Global Game Jam</h2>
                     <p>
                         2012 - 2014 <br /> While not techinically a competition, I have participated in every Global Game Jam that I was able to since I found out about its existance. A good mix of 2D and 3D games have come out of this event.
@@ -166,7 +166,7 @@
                 </div>
 
                 <div class="card-3 card event">
-                    <img class="circle-img" height=128 width=128 src="images/logos/sgdc.png" alt="sudbury game design competition">
+                    <img class="circle-img" height=128 width=128 src="logos/sgdc.png" alt="sudbury game design competition">
                     <h2>Sudbury Game Design Competition</h2>
                     <p>
                         An event that started last year, the Sudbury Game Design Competition brought in 15 teams in a Game Jam style of competition. The end products were judged by a panel of judges, and our game was awarded third place.
@@ -174,7 +174,7 @@
                 </div>
 
                 <div class="card-3 card event">
-                    <img class="circle-img" height=128 width=128 src="images/logos/protolaunch.jpg" alt="protolaunch">
+                    <img class="circle-img" height=128 width=128 src="logos/protolaunch.jpg" alt="protolaunch">
                     <h2>Protolaunch</h2>
                     <p>
                         An event that I was able to participate in for its final year, Protolaunch was a series of workshops that were run on several weekends during the year, that brought in industry professionals to do a talk and then an activity with the participants. The
@@ -207,54 +207,6 @@
 
 
             <script>
-                function submit_form(e) {
-                    e.preventDefault();
-                    var name = $("#name").val();
-                    var email = $("#email").val();
-                    var message = $("#message").val();
-                    var dataString = 'name=' + name + '&email=' + email + '&message=' + message;
-
-                    if (name == '' || email == '' || message == '') {
-                        if (name == '') {
-                            $('.success').fadeOut(200).hide();
-                            $('.send_error').fadeOut(200).hide();
-                            $('.name_error').fadeIn(200).show();
-                        }
-                        if (email == '') {
-                            $('.success').fadeOut(200).hide();
-                            $('.send_error').fadeOut(200).hide();
-                            $('.email_error').fadeIn(200).show();
-                        }
-                        if (message == '') {
-                            $('.success').fadeOut(200).hide();
-                            $('.send_error').fadeOut(200).hide();
-                            $('.message_error').fadeIn(200).show();
-                        }
-
-                    } else {
-                        $.ajax({
-                            type: "POST",
-                            url: "contact.php",
-                            data: dataString,
-                            success: function() {
-                                $('.success').fadeIn(200).show();
-                                $('.name_error').fadeOut(200).hide();
-                                $('.email_error').fadeOut(200).hide();
-                                $('.message_error').fadeOut(200).hide();
-                                $('.send_error').fadeOut(200).hide();
-
-                            },
-                            error: function() {
-                                $('.success').fadeOut(200).hide();
-                                $('.name_error').fadeOut(200).hide();
-                                $('.email_error').fadeOut(200).hide();
-                                $('.message_error').fadeOut(200).hide();
-                                $('.send_error').fadeIn(200).show();
-                            }
-                        });
-                    }
-                    return false;
-                }
             </script>
 
 
@@ -263,7 +215,7 @@
             </footer>
 
     </main>
-    <script src="js/typewriter.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>
