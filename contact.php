@@ -9,7 +9,7 @@ if($_POST)
 
   $concat_message = "Name: " + $name + "\nEmail: " + $email + "\n\n" + $message;
 
-  mail("jrhude@justinrhude.com", "Message from " + name + " on justinrhude.com", );
+  mail("jrhude@justinrhude.com", "Message from " + $name + " on justinrhude.com", $message);
 }else {
 
 }
